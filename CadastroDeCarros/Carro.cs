@@ -7,7 +7,7 @@ namespace CadastroDeCarros
 		public string modelo;
 		public string placa;
 		public string cor;
-		public string proprietario;
+		public Proprietario proprietario = new Proprietario();
 	}
 }
 
