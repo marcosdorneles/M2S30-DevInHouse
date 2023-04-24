@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1705.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2S03 - DevInHouse", "M2S03 - DevInHouse\M2S03 - DevInHouse.csproj", "{121C308F-BCA2-441A-9DF8-491F114252B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroDeCarros", "CadastroDeCarros\CadastroDeCarros.csproj", "{7FB097A3-EA84-4BB7-84B7-B00519C1F29D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{121C308F-BCA2-441A-9DF8-491F114252B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{121C308F-BCA2-441A-9DF8-491F114252B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{121C308F-BCA2-441A-9DF8-491F114252B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB097A3-EA84-4BB7-84B7-B00519C1F29D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB097A3-EA84-4BB7-84B7-B00519C1F29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB097A3-EA84-4BB7-84B7-B00519C1F29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB097A3-EA84-4BB7-84B7-B00519C1F29D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
