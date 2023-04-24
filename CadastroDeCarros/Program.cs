@@ -88,5 +88,22 @@ internal class Program
             Console.WriteLine("\nNovo carro cadastrado com sucesso!\n");
         }
 
+        void exibeCarros()
+        {
+            Console.WriteLine("Lista de Carros:");
+            foreach (Carro carro in listaCarros)
+            {
+                Console.WriteLine("Marca: " + carro.marca);
+                Console.WriteLine("Modelo: " + carro.modelo);
+                Console.WriteLine("Placa: " + carro.placa);
+                Console.WriteLine("Cor: " + carro.cor);
+                Console.WriteLine("Proprietário: ");
+                Console.WriteLine("\tNome: " + carro.proprietario.nome);
+                Console.WriteLine("\tCPF: " + carro.proprietario.cpf);
+                Console.WriteLine("\tTelefone: " + carro.proprietario.telefone);
+                Console.WriteLine();
+            }
+        }
+
     }
 }
