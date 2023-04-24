@@ -47,7 +47,38 @@ internal class Program
         listaCarros.Add(carro2);
         listaCarros.Add(carro3);
 
-        void CadastrarNovoCarro(List<Carro> listaCarros)
+        int opcao = 0;
+
+        while (opcao != 3)
+        {
+            Console.WriteLine("Menu:");
+            Console.WriteLine("1 - Cadastrar Carro");
+            Console.WriteLine("2 - Consultar Carros");
+            Console.WriteLine("3 - Sair");
+
+            Console.Write("\nDigite a opção desejada: ");
+            opcao = int.Parse(Console.ReadLine());
+
+            switch (opcao)
+            {
+                case 1:
+                    CadastrarNovoCarro(listaCarros);
+                    break;
+                case 2:
+                    exibeCarros(listaCarros);
+                    break;
+                case 3:
+                    Console.WriteLine("Saindo...");
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida. Tente novamente.");
+                    break;
+            }
+        }
+
+            Console.WriteLine();
+
+            void CadastrarNovoCarro(List<Carro> listaCarros)
         {
             Console.WriteLine("Cadastro de Novo Carro\n");
 
@@ -88,7 +119,7 @@ internal class Program
             Console.WriteLine("\nNovo carro cadastrado com sucesso!\n");
         }
 
-        void exibeCarros()
+        void exibeCarros(List<Carro> listaCarros)
         {
             Console.WriteLine("Lista de Carros:");
             foreach (Carro carro in listaCarros)
