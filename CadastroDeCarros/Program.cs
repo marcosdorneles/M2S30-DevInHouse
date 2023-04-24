@@ -47,5 +47,46 @@ internal class Program
         listaCarros.Add(carro2);
         listaCarros.Add(carro3);
 
+        void CadastrarNovoCarro(List<Carro> listaCarros)
+        {
+            Console.WriteLine("Cadastro de Novo Carro\n");
+
+            Console.Write("Digite a marca do carro: ");
+            string marca = Console.ReadLine();
+
+            Console.Write("Digite o modelo do carro: ");
+            string modelo = Console.ReadLine();
+
+            Console.Write("Digite a placa do carro: ");
+            string placa = Console.ReadLine();
+
+            Console.Write("Digite a cor do carro: ");
+            string cor = Console.ReadLine();
+
+            Console.WriteLine("\nDados do proprietário:");
+
+            Console.Write("Digite o nome do proprietário: ");
+            string nomeProprietario = Console.ReadLine();
+
+            Console.Write("Digite o CPF do proprietário: ");
+            string cpfProprietario = Console.ReadLine();
+
+            Console.Write("Digite o telefone do proprietário: ");
+            string telefoneProprietario = Console.ReadLine();
+
+            Proprietario proprietario = new Proprietario();
+
+            Carro novoCarro = new Carro();
+            novoCarro.marca = marca;
+            novoCarro.modelo = modelo;
+            novoCarro.placa = placa;
+            novoCarro.cor = cor;
+            novoCarro.proprietario = proprietario;
+
+            listaCarros.Add(novoCarro);
+
+            Console.WriteLine("\nNovo carro cadastrado com sucesso!\n");
+        }
+
     }
 }
