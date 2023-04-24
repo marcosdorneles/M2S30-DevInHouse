@@ -4,7 +4,8 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        List<Carro> listaCarros = new List<Carro>();
+
         var proprietario1 = new Proprietario();
         proprietario1.nome = "Musie";
         proprietario1.telefone = "11 1111-1111";
@@ -40,5 +41,11 @@ internal class Program
         carro3.placa = "LWO-4502";
         carro3.cor = "Cinza";
         carro3.proprietario = proprietario3;
+
+
+        listaCarros.Add(carro1);
+        listaCarros.Add(carro2);
+        listaCarros.Add(carro3);
+
     }
 }
